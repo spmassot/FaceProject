@@ -27,10 +27,10 @@ def main(input_pic, debug=False):
 
 if __name__=='__main__':
     import os
-    path = '/mnt/c/Users/Sean/Repos/FaceProject/samplefaces/'
+    test_path = env['TestPath']
     faces = [
-        bytearray(open(os.path.join(path, x), 'rb').read())
-        for x in os.listdir(path)
+        bytearray(open(os.path.join(test_path, x), 'rb').read())
+        for x in os.listdir(test_path)
     ]
     client = boto3.client('rekognition')
     client.delete_collection(CollectionId='Test_Collection')
