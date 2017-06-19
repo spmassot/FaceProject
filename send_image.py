@@ -15,7 +15,7 @@ def main(input_pic, debug=False):
     )
     ext_id = uuid4().hex if not is_match['FaceMatches'] else max(
         [(y['Face']['ExternalImageId'], y['Similarity'])
-         for y in is_in_collection['FaceMatches']],
+         for y in is_match['FaceMatches']],
         key=itemgetter(1)
     )[0]
     client.index_faces(
