@@ -1,6 +1,7 @@
-import boto3
+from models.profiles import ProfileModel
 
+def put_profile(ext_id, convoConfig, **kwargs):
+    ProfileModel(ext_id, convoConfig, **kwargs).save()
 
-if __name__ == '__main__':
-    client = boto3.client('dynamodb')
-    create_table('test_table')
+def get_profile(ext_id):
+    return ProfileModel.query(ext_id).convoConfig
