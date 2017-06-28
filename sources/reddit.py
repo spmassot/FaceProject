@@ -7,7 +7,6 @@ reddit = praw.Reddit(
     user_agent=env['reddit_user_agent']
 )
 
-for submission in reddit.subreddit('learnpython').hot(limit=10):
-    print(submission.title)
-
-
+if __name__ == '__main__':
+    for submission in reddit.subreddit('learnpython').hot(limit=10):
+        print(submission.title)
