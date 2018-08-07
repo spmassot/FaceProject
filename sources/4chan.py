@@ -17,8 +17,7 @@ def get_post(post):
     txt = post.text_comment.strip().replace('\n', ' ')
     if not txt:
         return None
-    
-        return (post.post_id,post.text_comment.strip().replace('\n',''),)
+    return (post.post_id,post.text_comment.strip().replace('\n',''),)
 
 if __name__ == '__main__':
     print(get_board('b'))
