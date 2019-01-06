@@ -23,7 +23,7 @@ def make_configr(**kwargs):
             'attrC'
         ]
     )
-    return configr(**kwargs) 
+    return configr(**kwargs)
 
 if __name__ == '__main__':
     from uuid import uuid4
