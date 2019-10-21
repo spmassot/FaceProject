@@ -29,4 +29,4 @@ s3transfer==0.1.10
 scipy==0.19.1
 six==1.10.0
 update-checker==0.16
-urllib3==1.21.1
+urllib3==1.24.2
