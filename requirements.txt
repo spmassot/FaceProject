@@ -10,7 +10,7 @@ google-auth-httplib2==0.0.2
 google-cloud-core==0.25.0
 google-cloud-language==0.25.0
 googleapis-common-protos==1.5.2
-httplib2==0.10.3
+httplib2==0.18.0
 idna==2.5
 jmespath==0.9.3
 numpy==1.13.0
