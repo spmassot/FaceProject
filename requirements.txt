@@ -17,7 +17,7 @@ numpy==1.13.0
 pandas==0.20.2
 praw==4.5.1
 prawcore==0.10.1
-protobuf==3.3.0
+protobuf==3.18.3
 pyasn1==0.2.3
 pyasn1-modules==0.0.9
 pynamodb==3.0.1
